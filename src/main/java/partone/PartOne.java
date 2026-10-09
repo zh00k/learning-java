@@ -1,34 +1,22 @@
 package partone;
 
-import java.util.List;
-
 public class PartOne {
 
-    public static void run() {
+    public static void run(String[] args) {
         // Задание №1
         System.out.println("---\nЗадание №1\n");
-        Person person = new Person("Igor", "Syn'ak", 67);
-        person.introduce();
+        Person.main(args);
 
         // Задание №2
         System.out.println("\n---\nЗадание №2\n");
-        FruitList fruitList = new FruitList(
-                List.of("Яблоко", "Банан", "Апельсин", "Киви", "Лемон")
-        );
-        fruitList.listAllFruits();
+        FruitList.main(args);
 
         // Задание №3
         System.out.println("\n---\nЗадание №3\n");
-        BudgetChecker budgetChecker = new BudgetChecker(
-                List.of(500.00, 199.99, 665.55, 19.99, 47.13), 1000.00
-        );
-        budgetChecker.check();
+        BudgetChecker.main(args);
 
         // Задание №4
         System.out.println("\n---\nЗадание №4\n");
-        BudgetSpender budgetSpender = new BudgetSpender(
-                List.of(500.00, 199.99, 665.55, 19.99, 47.13), 1000.00
-        );
-        budgetSpender.spend();
+        BudgetSpender.main(args);
     }
 }

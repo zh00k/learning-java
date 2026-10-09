@@ -2,9 +2,9 @@ package partone;
 
 public class Person {
 
-    String firstName;
-    String lastName;
-    int age;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
 
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
@@ -18,5 +18,10 @@ public class Person {
             + firstName + " " + lastName + "."
             + " Мне " + age + " лет."
         );
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("Igor", "Syn'ak", 67);
+        person.introduce();
     }
 }
