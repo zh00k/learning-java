@@ -26,7 +26,7 @@ public class MathHelper {
 
         System.out.println(
                 MathHelper.max(pair.get(0), pair.get(1)) + " больше " + MathHelper.min(pair.get(0), pair.get(1))
-        );
+                          );
 
         int num = 9;
 

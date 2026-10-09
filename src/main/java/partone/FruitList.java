@@ -10,6 +10,14 @@ public class FruitList {
         this.fruits = fruits;
     }
 
+    public static void main(String[] args) {
+        FruitList fruitList = new FruitList(
+                List.of("Яблоко", "Банан", "Апельсин", "Киви", "Лимон")
+        );
+
+        fruitList.listAllFruits();
+    }
+
     public void listAllFruits() {
         if (fruits.isEmpty()) {
             System.out.println("Список фруктов пуст");
@@ -18,12 +26,5 @@ public class FruitList {
         for (int i = 0; i < fruits.size(); i++) {
             System.out.println((i + 1) + ". " + fruits.get(i));
         }
-    }
-
-    public static void main(String[] args) {
-        FruitList fruitList = new FruitList(
-                List.of("Яблоко", "Банан", "Апельсин", "Киви", "Лимон")
-        );
-        fruitList.listAllFruits();
     }
 }
